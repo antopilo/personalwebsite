@@ -1,0 +1,29 @@
+$bg-color: #10192C;
+
+.container-fluid{
+    height: 500px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: $bg-color;
+    
+}
+
+p{
+    max-width: 50%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.text-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

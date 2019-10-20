@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('../../node_modules/roboto-fontface/fonts/roboto/Roboto-Regular.woff') format('woff'),
+}
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('../../node_modules/roboto-fontface/fonts/roboto/Roboto-Bold.woff') format('woff'),
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: "roboto-bold"
+}
+

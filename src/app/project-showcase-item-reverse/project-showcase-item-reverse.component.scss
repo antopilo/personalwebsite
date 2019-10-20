@@ -1,0 +1,67 @@
+$bg-color: #10192C;
+$text-color: #8492B0;
+$overlap: 50px;
+.project-img{
+    width: 100%;
+    border-radius: 8px;
+    z-index: 0;
+}
+#scene{
+    position: relative;
+    right: $overlap;
+}
+.info-card{
+    color: $text-color;
+    background-color: $bg-color;
+    border-radius: 3px;
+    padding: 15px;
+    text-align: left;
+    z-index: 2;
+    position: relative;
+    right: -$overlap;
+}
+
+.item-wrapper{
+    margin-top: 50px;
+    text-align: right;
+
+}
+p, h6{
+    text-align: left;
+    width: 100%;
+}
+
+h6{
+    font-size: 26px;
+    
+    margin-left: $overlap;
+}
+
+p{
+    font-size: 15px;
+}
+
+#type{
+    
+    margin-left: $overlap;
+}
+
+.link-container{
+    float: left;
+    left:0;
+    position: relative;
+    width: 100%;
+    padding-left: $overlap;;
+    i{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+i{
+    opacity: 33%;
+}
+
+.description{
+    font-size: 18px;
+}

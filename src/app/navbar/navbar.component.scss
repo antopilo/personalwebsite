@@ -1,0 +1,20 @@
+
+$bg-color: #10192C;
+#sidebar-container{
+    width: 100%;
+    background-color: $bg-color;
+    
+}
+
+#sidebar-wrapper{
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 200px;
+    background-color: $bg-color;
+    div{
+        padding-left: 20px;
+        color:white;
+    }
+}
