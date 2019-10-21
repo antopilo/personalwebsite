@@ -10,6 +10,7 @@ import { ProjectShowcaseItemComponent } from './project-showcase-item/project-sh
 import { ProjectShowcaseItemReverseComponent } from './project-showcase-item-reverse/project-showcase-item-reverse.component';
 import { OtherProjectsComponent } from './other-projects/other-projects.component';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
+import { OtherProjectItemComponent } from './other-project-item/other-project-item.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
     ProjectShowcaseItemComponent,
     ProjectShowcaseItemReverseComponent,
     OtherProjectsComponent,
-    GetInTouchComponent
+    GetInTouchComponent,
+    OtherProjectItemComponent
   ],
   imports: [
     BrowserModule,

@@ -1,21 +1,18 @@
 <div class="row item-wrapper">
     <div class="col-md-6" id="imagepar">
-        <img data-depth="0.2" id='img' class="project-img shadow" src="../../assets/img/robin1.gif">
+        <img data-depth="0.2" id='img' class="project-img shadow" src="{{ projectImg}}">
     </div>
     <div class="col-md-6 " >
         <div class="row" id="scene3">
-            <p data-depth="0.2" id='type'>Video game</p>
+            <p data-depth="0.2" id='type'>{{ projectType }}</p>
         </div>
         <div class="row" id="scene2">
-            <h6 data-depth="0.24"><b>Project Robin</b></h6>
+            <h6 data-depth="0.24"><b>{{ projectName }}</b></h6>
         </div>
         <div class="row" id="scene">
                 <div data-depth="0.2" class="info-card shadow">
                 <p class="description">
-                        This is a game that I am currently developping using C# and Godot engine. 
-                        It’s a combination of puzzles, platforming and rpg elements. Some games that inspired me to start
-                        working on this project were Celeste, FEZ and Zelda. This project is 100% made by me, including the art, 
-                        the programming, level design, UI design and sound.
+                    {{ projectDesc }}
                     </p>
             </div>
         </div>

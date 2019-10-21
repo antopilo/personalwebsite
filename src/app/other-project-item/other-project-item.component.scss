@@ -1,0 +1,30 @@
+$bg-color: #10192C;
+$bg-color2: #293D5A;
+.title{
+    width: 100%;
+    text-align: center;
+}
+
+
+.project-container{
+    margin-top: 25px;
+    padding: 50px;
+    background-color: $bg-color2;
+    border-radius: 3px;
+}
+
+.tech-list{
+    position: absolute;
+    right: 10%;
+    height: 25px;
+    display:inline-block;
+    li{
+        display:inline-block;
+        padding-left: 10px;
+        opacity: 0.33;
+    }
+}
+
+.icon{
+    margin-bottom: 20px;
+}

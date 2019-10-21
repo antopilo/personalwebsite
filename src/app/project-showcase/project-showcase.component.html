@@ -6,15 +6,67 @@
             </div>
            
         </div>
-        <div class="row">
-            <div class="col">
-                    <app-project-showcase-item></app-project-showcase-item>
-            </div>
-        </div>
-        <div class="row">
-                <div class="col">
-                        <app-project-showcase-item-reverse></app-project-showcase-item-reverse>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                      </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                        <div class="row">
+                                <div class="col">
+                                    <app-project-showcase-item 
+                                        projectName='{{ project.name }}'
+                                        projectDesc='{{ project.desc }}'
+                                        projectImg='{{ project.img }}'
+                                        projectType='{{ project.type }}'
+                                    ></app-project-showcase-item>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <app-project-showcase-item-reverse
+                                        projectName='{{ project2.name }}'
+                                        projectDesc='{{ project2.desc }}'
+                                        projectImg='{{ project2.img }}'
+                                        projectType='{{ project2.type }}'>
+                    
+                                    </app-project-showcase-item-reverse>
+                                </div>
+                            </div>
+                  </div>
+                  <div class="carousel-item">
+                        <div class="row">
+                                <div class="col">
+                                    <app-project-showcase-item 
+                                        projectName='{{ project3.name }}'
+                                        projectDesc='{{ project3.desc }}'
+                                        projectImg='{{ project3.img }}'
+                                        projectType='{{ project3.type }}'
+                                    ></app-project-showcase-item>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col">
+                                        <app-project-showcase-item-reverse
+                                            projectName='{{ project4.name }}'
+                                            projectDesc='{{ project4.desc }}'
+                                            projectImg='{{ project4.img }}'
+                                            projectType='{{ project4.type }}'>
+                        
+                                        </app-project-showcase-item-reverse>
+                                    </div>
+                                </div>
+                  </div>
                 </div>
-            </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        
+       
     </div> 
 </div>

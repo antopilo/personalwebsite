@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import Parallax from 'parallax-js'
+import { Component, OnInit, Input } from '@angular/core';
+import Parallax from 'parallax-js';
+
 @Component({
   selector: 'app-project-showcase-item',
   templateUrl: './project-showcase-item.component.html',
@@ -14,10 +15,18 @@ export class ProjectShowcaseItemComponent implements OnInit {
     invertX: false,
     invertY: false
   }
+
+
+  @Input() projectType: string = "";
+  @Input() projectName: string = "";
+  @Input() projectDesc: string = "";
+  @Input() projectImg: string = "";
+  @Input() projectLink: string = "";
+   
   constructor() { }
 
   ngOnInit() {
-    var scene = document.getElementById('scene');
+    var scene = document.getElementsByClassName('scene');
     var scene2 = document.getElementById('scene2');
     var scene3 = document.getElementById('scene3');
     var scene4 = document.getElementById('scene4');

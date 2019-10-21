@@ -1,0 +1,18 @@
+
+    <div class="project-container container">
+        <div class="row icon">
+            <img src="../../assets/iconmonstr-folder-thin.svg">
+        </div>
+        <div class="row">
+            <h5>{{projectTitle}}</h5>
+        </div>
+        <div class="row">
+            <p>
+                {{projectDesc}}
+            </p>
+        </div>
+        <div class="row">
+            <ul class="tech-list">
+                <li *ngFor="let tech of projetTech">{{tech}}</li>
+            </ul>
+        </div>

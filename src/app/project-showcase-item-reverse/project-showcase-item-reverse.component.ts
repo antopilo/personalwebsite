@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import Parallax from 'parallax-js'
 
 @Component({
@@ -16,6 +16,14 @@ export class ProjectShowcaseItemReverseComponent implements OnInit {
     invertX: false,
     invertY: false
   }
+
+  @Input() projectType: string = "";
+  @Input() projectName: string = "";
+  @Input() projectDesc: string = "";
+  @Input() projectImg: string = "";
+  @Input() projectLink: string = "";
+   
+  
   constructor() { }
 
   ngOnInit() {
