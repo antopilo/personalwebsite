@@ -13,7 +13,8 @@ export class OtherProjectItemComponent implements OnInit {
   @Input() projectTitle: string;
   @Input() projectDesc: string;
   @Input() projectTech: string[];
-
+  @Input() projectUrl: string;
+  
   constructor() { }
 
   ngOnInit() {

@@ -11,7 +11,10 @@ import { ProjectShowcaseItemReverseComponent } from './project-showcase-item-rev
 import { OtherProjectsComponent } from './other-projects/other-projects.component';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 import { OtherProjectItemComponent } from './other-project-item/other-project-item.component';
-
+import { DetailrootComponent } from './detail/detailroot/detailroot.component';
+import { HeaderComponent } from './detail/header/header.component';
+import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +25,16 @@ import { OtherProjectItemComponent } from './other-project-item/other-project-it
     ProjectShowcaseItemReverseComponent,
     OtherProjectsComponent,
     GetInTouchComponent,
-    OtherProjectItemComponent
+    OtherProjectItemComponent,
+    DetailrootComponent,
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

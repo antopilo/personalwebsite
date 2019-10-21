@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import Parallax from 'parallax-js';
-import { ConsoleReporter } from 'jasmine';
 
 @Component({
   selector: 'app-project-showcase-item',
@@ -28,6 +27,7 @@ export class ProjectShowcaseItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
     var scene = document.getElementsByClassName('scene');
     var scene2 = document.getElementById('scene2');
     var scene3 = document.getElementById('scene3');

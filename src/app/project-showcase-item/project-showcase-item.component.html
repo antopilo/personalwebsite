@@ -1,8 +1,8 @@
-<div class="row item-wrapper">
-    <div class="col-md-6" id="imagepar">
+<div class="row item-wrapper" >
+    <div class="col-md-6" id="imagepar" data-aos="fade-up">
         <img data-depth="0.2" id='img' class="project-img shadow" src="{{ projectImg }}">
     </div>
-    <div class="col-md-6 " >
+    <div class="col-md-6 " data-aos="fade-up" data-aos-offset="300">
         <div class="row"  id="scene3">
             <p data-depth="0.2" id='type'>{{ projectType }}</p>
         </div>
@@ -19,8 +19,8 @@
         <div class="row" id="scene4">
             <div data-depth="0.2" class="link-container">
                     <a *ngIf="gitUrl != '' " href="{{gitUrl}}">
-                            <i class="fa fa-github"></i>
-                        </a>
+                        <i class="fa fa-github"></i>
+                    </a>
                 <i href="" class="fa fa-external-link"></i>
             </div>
         </div>

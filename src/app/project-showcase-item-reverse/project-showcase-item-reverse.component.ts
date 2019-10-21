@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import Parallax from 'parallax-js'
-
 @Component({
   selector: 'app-project-showcase-item-reverse',
   templateUrl: './project-showcase-item-reverse.component.html',
@@ -28,6 +27,8 @@ export class ProjectShowcaseItemReverseComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
+
     var scene = document.getElementById('scene5');
     var scene2 = document.getElementById('scene6');
     var scene3 = document.getElementById('scene7');

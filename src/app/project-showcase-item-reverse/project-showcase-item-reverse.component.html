@@ -1,5 +1,5 @@
-<div class="row item-wrapper">
-    <div class="col-md-6" >
+<div class="row item-wrapper" data-aos="fade-up">
+    <div class="col-md-6"   >
         <div class="row" id="scene5">
             <p data-depth="0.2" id='type'>{{projectType}}</p>
         </div>
@@ -15,14 +15,15 @@
         </div>
         <div class="row" id="scene8">
             <div data-depth="0.2" class="link-container">
-                <a *ngIf="gitUrl != '' " href="{{gitUrl}}">
+                <a *ngIf="gitUrl != ''" href="{{gitUrl}}">
                     <i class="fa fa-github"></i>
                 </a>
                 <i class="fa fa-external-link"></i>
             </div>
         </div>
+
     </div>
-    <div class="col-md-6" id="img2">
+    <div class="col-md-6" id="img2" >
         <img data-depth="-0.1" class="project-img shadow" src="{{projectImg}}">
     </div>
 </div>
