@@ -15,7 +15,8 @@ export class ProjectShowcaseComponent implements OnInit {
       working on this project were Celeste, FEZ and Zelda. This project is 100% made by me, including the art, \
       the programming, level design, UI design and sound.",
       img: "../../assets/img/robin1.gif",
-      gitUrl: ""
+      gitUrl: "",
+      externalLink: ""
   }
 
   project2= {
@@ -26,7 +27,8 @@ export class ProjectShowcaseComponent implements OnInit {
     the complex meshing algorithm. It features a in-engine voxel editor, \
     a sprite to voxel converter, and a library that was coded in C# and GDscript.",
     img: "../../assets/logo2.png",
-    gitUrl: "https://github.com/antopilo/VoxelFactory"
+    gitUrl: "https://github.com/antopilo/VoxelFactory",
+    externalLink: "/detail/voxel factory"
   }
 
   project3= {
@@ -37,7 +39,8 @@ export class ProjectShowcaseComponent implements OnInit {
     that have a small vertical offset between each other. This tool has a live 3D preview, a layer system and supports \
     multiple palettes from lospec.com",
     img: "../../assets/stack.gif",
-    gitUrl: "https://github.com/antopilo/SpriteStacker"
+    gitUrl: "https://github.com/antopilo/SpriteStacker",
+    externalLink: ""
   }
 
   project4= {
@@ -48,7 +51,8 @@ export class ProjectShowcaseComponent implements OnInit {
       handled by me. This is a multi-threaded project that allows for a smooth gameplay while the engine handles \
       the world generation.",
     img: "../../assets/voxelengine.jpg",
-    gitUrl: "https://github.com/antopilo/VoxelEngine"
+    gitUrl: "https://github.com/antopilo/VoxelEngine",
+    externalLink: ""
     
   }
 

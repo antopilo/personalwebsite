@@ -6,7 +6,7 @@ import { DetailrootComponent } from './detail/detailroot/detailroot.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
-  {path: "detail", component: DetailrootComponent}
+  {path: "detail/:file", component: DetailrootComponent}
 ];
 
 @NgModule({
