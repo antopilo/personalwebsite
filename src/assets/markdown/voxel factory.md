@@ -1,3 +1,9 @@
+---
+title: Voxel factory
+description: Nothing to see here
+banner: https://images.unsplash.com/photo-1475694867812-f82b8696d610?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy
+---
+
 # Voxel Factory 📦 :factory: 
 
 ![logo](https://i.imgur.com/uxXe4hy.png)

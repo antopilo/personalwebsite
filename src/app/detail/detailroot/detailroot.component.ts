@@ -34,11 +34,25 @@ export class DetailrootComponent implements OnInit {
   }
 
   RenderMarkdown(data){
+    
+    
     var title = document.getElementById('title');
-    title.innerHTML = this.Capitalize(this.fileName);
-
     var md = require('markdown-it')();
-    var result = md.render(data);
+
+    var fm = require('front-matter')
+    var parsed = fm(data.toString())
+    var result = md.render(parsed.body);
+
+    var header = parsed.attributes;
+    var body = parsed.body;
+
+    // load title
+    title.innerHTML = this.Capitalize(header.title);
+    
+    // load banner
+    var banner = document.getElementById('nav-wrapper');
+    banner.style.background = 'url(' + header.banner + ')';
+    
     this.contentContainer.innerHTML = result;
   }
 }
