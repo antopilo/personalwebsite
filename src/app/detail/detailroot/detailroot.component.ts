@@ -28,9 +28,14 @@ export class DetailrootComponent implements OnInit {
 
   }
 
+  Capitalize(s) {
+    if (typeof s !== 'string') return ''
+      return s.charAt(0).toUpperCase() + s.slice(1)
+  }
+
   RenderMarkdown(data){
     var title = document.getElementById('title');
-    title.innerHTML = this.fileName;
+    title.innerHTML = this.Capitalize(this.fileName);
 
     var md = require('markdown-it')();
     var result = md.render(data);
