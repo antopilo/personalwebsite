@@ -1,24 +1,27 @@
 <div class="row item-wrapper">
     <div class="col-md-6" id="imagepar">
-        <img data-depth="0.2" id='img' class="project-img shadow" src="{{ projectImg}}">
+        <img data-depth="0.2" id='img' class="project-img shadow" src="{{ projectImg }}">
     </div>
     <div class="col-md-6 " >
-        <div class="row" id="scene3">
+        <div class="row"  id="scene3">
             <p data-depth="0.2" id='type'>{{ projectType }}</p>
         </div>
         <div class="row" id="scene2">
             <h6 data-depth="0.24"><b>{{ projectName }}</b></h6>
         </div>
         <div class="row" id="scene">
-                <div data-depth="0.2" class="info-card shadow">
+            <div data-depth="0.2" class="info-card shadow">
                 <p class="description">
                     {{ projectDesc }}
-                    </p>
+                </p>
             </div>
         </div>
         <div class="row" id="scene4">
             <div data-depth="0.2" class="link-container">
-                    <i class="fa fa-external-link"></i>
+                    <a *ngIf="gitUrl != '' " href="{{gitUrl}}">
+                            <i class="fa fa-github"></i>
+                        </a>
+                <i href="" class="fa fa-external-link"></i>
             </div>
         </div>
     </div>

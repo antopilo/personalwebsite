@@ -1,29 +1,29 @@
 <div class="row item-wrapper">
-        <div class="col-md-6">
-            <div class="row" id="scene5">
-                <p data-depth="0.2" id='type'>{{projectType}}</p>
-            </div>
-            <div class="row" id="scene6">
-                <h6 data-depth="0.2"><b>{{projectName}}</b></h6>
-            </div>
-            <div class="row "id='scene7' style="z-index: 10;">
-                <div data-depth="0.24" class="info-card shadow" >
-                    <p class="description">
-                        
-                        {{projectDesc}}
-                        </p>
-                </div>
-                
-            </div>
-            <div class="row" id="scene8">
-                <div data-depth="0.2" class="link-container">
-                        <i class="fa fa-github"></i>
-                        <i class="fa fa-external-link"></i>
-                </div>
+    <div class="col-md-6" >
+        <div class="row" id="scene5">
+            <p data-depth="0.2" id='type'>{{projectType}}</p>
+        </div>
+        <div class="row" id="scene6">
+            <h6 data-depth="0.2"><b>{{projectName}}</b></h6>
+        </div>
+        <div class="row"  id='scene7' style="z-index: 10;">
+            <div data-depth="0.24" class="info-card shadow" >
+                <p class="description">
+                    {{projectDesc}}
+                </p>
             </div>
         </div>
-        <div class="col-md-6" id="img2">
-            <img data-depth="-0.1" class="project-img shadow" src="{{projectImg}}">
+        <div class="row" id="scene8">
+            <div data-depth="0.2" class="link-container">
+                <a *ngIf="gitUrl != '' " href="{{gitUrl}}">
+                    <i class="fa fa-github"></i>
+                </a>
+                <i class="fa fa-external-link"></i>
+            </div>
         </div>
     </div>
+    <div class="col-md-6" id="img2">
+        <img data-depth="-0.1" class="project-img shadow" src="{{projectImg}}">
+    </div>
+</div>
     

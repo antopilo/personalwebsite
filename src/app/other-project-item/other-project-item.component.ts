@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import anime from 'animejs/lib/anime.es.js';
+import { stringify } from '@angular/compiler/src/util';
 
 @Component({
   selector: 'app-other-project-item',
@@ -7,6 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class OtherProjectItemComponent implements OnInit {
 
+  @Input() projectId : string;
   @Input() projectTitle: string;
   @Input() projectDesc: string;
   @Input() projectTech: string[];
@@ -14,6 +17,29 @@ export class OtherProjectItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
+
+  enterButton() 
+  { 
+    anime({
+      targets: '#' + this.projectId ,
+      scale: '1.05',
+      duration: 1000
+    });
+
+    console.log('#' + this.projectId );
+  };
+
+  leaveButton() { 
+    
+    anime({
+      targets: '#' + this.projectId ,
+      scale: '1',
+      duration: 1000
+    });
+  };
+  
+
 
 }

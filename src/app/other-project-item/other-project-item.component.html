@@ -1,5 +1,6 @@
 
-    <div class="project-container container">
+<a   href="https://www.github.com/antopilo">
+    <div id="{{ projectId }}" (mouseenter)="enterButton()" (mouseleave)="leaveButton()" class="project-container container">
         <div class="row icon">
             <img src="../../assets/iconmonstr-folder-thin.svg">
         </div>
@@ -7,12 +8,14 @@
             <h5>{{projectTitle}}</h5>
         </div>
         <div class="row">
-            <p>
-                {{projectDesc}}
-            </p>
+          <p>
+              {{projectDesc}}
+          </p>
         </div>
         <div class="row">
-            <ul class="tech-list">
-                <li *ngFor="let tech of projetTech">{{tech}}</li>
-            </ul>
+           <ul class="tech-list">
+               <li *ngFor="let tech of projetTech">{{tech}}</li>
+           </ul>
         </div>
+    </div>
+</a>

@@ -5,12 +5,21 @@ $bg-color2: #293D5A;
     text-align: center;
 }
 
+a{
+    color: white;
+
+}
+
+a:hover{
+    text-decoration: none;
+}
 
 .project-container{
     margin-top: 25px;
     padding: 50px;
     background-color: $bg-color2;
     border-radius: 3px;
+    position:relative;
 }
 
 .tech-list{

@@ -8,7 +8,6 @@ $overlap: 50px;
 }
 #scene{
     position: relative;
-    right: $overlap;
 }
 .info-card{
     color: $text-color;
@@ -23,7 +22,7 @@ $overlap: 50px;
 
 .item-wrapper{
     margin-top: 50px;
-    text-align: right;
+    text-align: left;
 
 }
 p, h6{
