@@ -1,15 +1,15 @@
 <div class="row item-wrapper" >
-    <div class="col-md-6" id="imagepar" data-aos="fade-up">
+    <div class="col-md-6-custom left" id="imagepar" data-aos="fade-up">
         <img id='img' class="project-img shadow" src="{{ projectImg }}">
     </div>
-    <div class="col-md-6 " data-aos="fade-up" data-aos-offset="300">
-        <div class="row"  >
+    <div class="col-md-6-custom right" data-aos="fade-up" data-aos-offset="200">
+        <div class="row title" >
             <p  id='type'>{{ projectType }}</p>
         </div>
         <div class="row" >
             <h6 ><b>{{ projectName }}</b></h6>
         </div>
-        <div class="row">
+        <div class="row card-container">
             <div  class="info-card shadow">
                 <p class="description">
                     {{ projectDesc }}
@@ -22,7 +22,8 @@
                     <i class="fab fa-github"></i>
                 </a>
                 <a *ngIf="externalLink " href="{{ externalLink }}">
-                    <i class="fas fa-external-link-square-alt"></i>
+                        More info.
+                    <!-- <i class="fas fa-external-link-square-alt"></i> -->
                 </a>
             </div>
         </div>

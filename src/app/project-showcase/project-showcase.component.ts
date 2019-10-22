@@ -16,7 +16,7 @@ export class ProjectShowcaseComponent implements OnInit {
       the programming, level design, UI design and sound.",
       img: "../../assets/img/robin1.gif",
       gitUrl: "",
-      externalLink: ""
+      externalLink: "detail/Robin"
   }
 
   project2= {

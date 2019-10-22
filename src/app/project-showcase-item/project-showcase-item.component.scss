@@ -1,6 +1,8 @@
 $bg-color: #10192C;
 $text-color: #8492B0;
 $overlap: 50px;
+$link-color: #858A93;
+
 .project-img{
     width: 100%;
     border-radius: 8px;
@@ -8,6 +10,15 @@ $overlap: 50px;
 
 #scene{
     position: relative;
+}
+
+.col-md-6-custom {
+    flex: 0 0 50%;
+    max-width: 50%;
+    //position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .info-card{
@@ -20,11 +31,19 @@ $overlap: 50px;
     left: -$overlap;
 }
 
+#type{
+    
+    margin-right: $overlap;
+}
+
+
+
 .item-wrapper{
     margin-top: 50px;
     text-align: right;
-
+    height:100%;
 }
+
 p, h6{
     text-align: right;
     width: 100%;
@@ -41,19 +60,25 @@ p{
     font-size: 15px;
 }
 
-#type{
-    
-    margin-right: $overlap;
-}
+
 
 .link-container{
     float: right;
     width: 100%;
     height: 25px;
     padding-right: $overlap;
+    a{
+        
+        color: $link-color;
+    }
+    a:hover{
+        color: $bg-color;
+        text-decoration: none;
+    }
     i{
         width: 25px;
         height: 25px;
+        margin-right: 10px;
     }
 }
 
@@ -62,4 +87,32 @@ i{
 }
 .description{
     font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+    .left{
+        display:none;
+        max-width: 0%;
+        width: 0%;
+    }
+    .right{
+        max-width: 100%;
+        width:100%;
+        flex: none;
+    }
+    .info-card{
+        position: absolute;
+        left: 0px;
+    }
+    #type{
+        margin-right: 0;
+    }
+    h6{
+        margin-right: 0;
+    }
+
+    .card-container{
+        height: 100px;
+    }
+    
 }

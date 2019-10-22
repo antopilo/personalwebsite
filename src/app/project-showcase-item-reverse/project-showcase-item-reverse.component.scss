@@ -1,14 +1,23 @@
 $bg-color: #10192C;
 $text-color: #8492B0;
 $overlap: 50px;
+
+$link-color: #858A93;
 .project-img{
     width: 100%;
     border-radius: 8px;
     z-index: -2;
 }
-#scene{
+
+.col-md-6-custom {
+    flex: 0 0 50%;
+    max-width: 50%;
     position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
 .info-card{
     color: $text-color;
     background-color: $bg-color;
@@ -51,6 +60,14 @@ p{
     position: relative;
     width: 100%;
     margin-left: $overlap;
+    a{
+        
+        color: $link-color;
+    }
+    a:hover{
+        text-decoration: none;
+        color: $bg-color;
+    }
     i{
         width: 25px;
         height: 25px;
@@ -63,4 +80,33 @@ i{
 
 .description{
     font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+    .left{
+        display:none;
+        max-width: 0%;
+        width: 0%;
+    }
+    .right{
+        max-width: 100%;
+        width:100%;
+        flex: none;
+    }
+
+    h6{
+        margin-left: 0;
+    }
+    #type{
+        margin-left: 0;
+    }
+    .info-card{
+        position: absolute;
+        left: 0px;
+    }
+
+    .card-container{
+        height: 100px;
+
+    }
 }

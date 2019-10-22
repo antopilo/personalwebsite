@@ -24,11 +24,11 @@
     "bootstrap": "^4.3.1",
     "file-system": "^2.2.2",
     "front-matter": "^3.0.2",
+    "fs": "0.0.1-security",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.5",
     "markdown-it-imsize": "^2.0.1",
     "markdown-it-multimd-table": "^3.2.3",
-    "markdown-it-style": "^1.0.0",
     "markdown-it-table-of-contents": "^0.4.4",
     "markdown-it-video": "^0.6.3",
     "parallax-js": "^3.1.0",
@@ -54,9 +54,13 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "markdown-it-style": "^1.0.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
+  },
+  "browser": {
+    "fs": false, "path": false, "os": false
   }
 }

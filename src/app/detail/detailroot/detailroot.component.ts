@@ -2,24 +2,25 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 
-
 @Component({
   selector: 'app-detailroot',
   templateUrl: './detailroot.component.html',
   styleUrls: ['./detailroot.component.scss']
 })
 
-export class DetailrootComponent implements OnInit {
 
-  constructor(private http: HttpClient, private route:ActivatedRoute) { }
+export class DetailrootComponent implements OnInit {
+  
+
   fileName;
   contentContainer;
 
+  constructor(private http: HttpClient, private route:ActivatedRoute) { }
+
+
   ngOnInit() {
     this.fileName = this.route.snapshot.paramMap.get('file');
-
     this.contentContainer = document.getElementById('markdown-container');
-
     this.http.get('assets/markdown/' + this.fileName + '.md', {responseType: 'text'})
         .subscribe(data => {
           this.RenderMarkdown(data);
@@ -42,8 +43,11 @@ export class DetailrootComponent implements OnInit {
     md.use(require("markdown-it-anchor").default); // Optional, but makes sense as you really want to link to something
     md.use(require('markdown-it-video'));
     md.use(require('markdown-it-multimd-table'));
-    md.use(require('markdown-it-style'));
-
+    md.use(require('markdown-it-style'), {
+      'p': 'text-align: justify; margin-bottom: 25px; overflow: none;flex-wrap: nowrap;',
+      'h2': 'text-align: justify; margin-bottom: 20px; overflow: none;flex-wrap: nowrap;',
+      'blockquote': 'margin-left: 40px; padding-top: 5; padding-bottom: 5; margin-right: 50px; border-left: 2px solid black; padding-left: 10px; background-color: #e1e1e1;'
+    });
     var fm = require('front-matter');
     var parsed = fm(data.toString());
 

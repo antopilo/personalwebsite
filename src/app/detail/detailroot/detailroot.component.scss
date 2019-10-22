@@ -38,7 +38,7 @@ $content-offset: 50px;
 .heading-container{
     margin-left: 20%;
     margin-right: 20%;
-    
+    background-repeat: no-repeat;
     padding-top: 150px - $content-offset;
     padding-bottom: 150px ;
     .row{
@@ -68,15 +68,19 @@ code{
     display:inline-block;
     margin-right: 5px;
 }
+
 #markdown-container{
     background: #EDEDED;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
+    overflow: hidden;
+
     img{
-        width: 0px;
+        max-width: 100%;
     }
+    
 }
 
 .body{
