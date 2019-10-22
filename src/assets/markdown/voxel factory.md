@@ -1,25 +1,29 @@
 ---
-title: Voxel factory
+title: VOXEL FACTORY
 description: Nothing to see here
 banner: https://images.unsplash.com/photo-1475694867812-f82b8696d610?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy
 ---
 
-# Voxel Factory 📦 :factory: 
+## Table of contents
 
-![logo](https://i.imgur.com/uxXe4hy.png)
 
+
+---
+
+> 
+> 
 > Voxel Factory is a simple Godot C# library that allows you to create voxel mesh easily using cubes. It handles the meshing for you and optimize it. 
 
 ## Voxel editor
+
 The plugins also comes with a voxel editor where you can create your own voxel models from godot. This is a good alternative if you are using magica voxel for small models. I don't recommended editing big models with this plugin as it is not suited yet for big mesh. The voxel editor can open **.vox** files from magica voxel without any problem atm. The only downside is that all change made from the voxel editor will not apply on the vox file directly. I'm currently storing the changes as meta-data on the file and not in binary format.
 
 ## Usage
 
 VoxelFactory can be used for anything in your project that needs procedural meshing. If you have a way to feed it some data. Then it will create the mesh no problem. You could use the library to create some voxel Items like in minecraft from pngs. You could feed it some chunk data so it will create the chunk mesh for you. If you want to create a procedural landscape using this library, you will need to handle the generation and multi-threading yourself.
 
-
-
 ## Installation
+
 Just import the source `VoxelFactory.cs` class to your project. 
 Nuget package and `dll` coming soon.
 GDscript version coming soon.
@@ -51,28 +55,7 @@ If you have a sprite node that has a texture that you want to extrude.
  Mesh = VoxelFactory.CreateMeshFromSprite(mySpriteNode);
 ```
 
-
-
 ## Documentation
-
-#### Propreties
-
-| Type     | Name            |
-| -------- | --------------- |
-| Material | DefaultMaterial |
-| float    | VoxelSize       |
-
-#### Methods
-
-| Return type | Name                 |
-| ----------- | -------------------- |
-| Mesh        | CreateMeshFromIMG    |
-| Mesh        | CreateMeshFromSprite |
-| Mesh        | CreateMesh           |
-| void        | AddVoxel             |
-| void        | AddVoxels            |
-| void        | ClearVoxels          |
-
 
 #### Propreties Descriptions
 

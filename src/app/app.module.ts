@@ -14,7 +14,10 @@ import { OtherProjectItemComponent } from './other-project-item/other-project-it
 import { DetailrootComponent } from './detail/detailroot/detailroot.component';
 import { HeaderComponent } from './detail/header/header.component';
 import { HomeComponent } from './home/home.component';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule, 
     
     HttpClientModule
   ],

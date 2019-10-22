@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import MarkdownIt from 'markdown-it';
 import { HttpClient } from '@angular/common/http';
-
 import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-detailroot',
@@ -37,18 +36,32 @@ export class DetailrootComponent implements OnInit {
     
     
     var title = document.getElementById('title');
-    var md = require('markdown-it')();
+    var description = document.getElementById('description');
 
-    var fm = require('front-matter')
-    var parsed = fm(data.toString())
-    var result = md.render(parsed.body);
+    var md = require('markdown-it')();
+    md.use(require("markdown-it-anchor").default); // Optional, but makes sense as you really want to link to something
+    md.use(require('markdown-it-video'));
+    md.use(require('markdown-it-multimd-table'));
+    md.use(require('markdown-it-style'));
+
+    var fm = require('front-matter');
+    var parsed = fm(data.toString());
 
     var header = parsed.attributes;
     var body = parsed.body;
 
+    md.use(require("markdown-it-table-of-contents"), {
+      "transformLink": (link) => {
+        return "detail/" + this.fileName + link;
+      },
+      "containerClass": "toc"
+    });
+
+    var result = md.render(parsed.body);
+
     // load title
     title.innerHTML = this.Capitalize(header.title);
-    
+    description.innerHTML = header.description;
     // load banner
     var banner = document.getElementById('nav-wrapper');
     banner.style.background = 'url(' + header.banner + ')';

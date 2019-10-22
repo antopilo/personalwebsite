@@ -5,7 +5,7 @@ import { DetailrootComponent } from './detail/detailroot/detailroot.component';
 
 
 const routes: Routes = [
-  {path: "", component: HomeComponent},
+  {path: "", component: HomeComponent, data:{animation: "*"}},
   {path: "detail/:file", component: DetailrootComponent}
 ];
 

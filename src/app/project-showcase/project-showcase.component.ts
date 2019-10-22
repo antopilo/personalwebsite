@@ -38,9 +38,9 @@ export class ProjectShowcaseComponent implements OnInit {
     2D technique that creates a pseudo 3D effect. The effect is possible by using multiple layers that \
     that have a small vertical offset between each other. This tool has a live 3D preview, a layer system and supports \
     multiple palettes from lospec.com",
-    img: "../../assets/stack.gif",
+    img: "../../assets/img/spriteStack.png",
     gitUrl: "https://github.com/antopilo/SpriteStacker",
-    externalLink: ""
+    externalLink: "/detail/spritestacker"
   }
 
   project4= {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import AOS from 'aos'
+import fs from 'file-system';
 
 @Component({
   selector: 'app-root',
