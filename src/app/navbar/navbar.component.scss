@@ -16,10 +16,18 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 200px;
+    margin-right: 25px;
     background-color: $bg-color;
     div{
         padding-left: 20px;
         color:white;
     }
+}
+
+@media screen and (max-width: 900px) {
+
+    #sidebar-wrapper{
+        margin-right: 25px;
+    }
+
 }
