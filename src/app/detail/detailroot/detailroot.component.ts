@@ -11,7 +11,6 @@ import { ActivatedRoute } from '@angular/router';
 
 export class DetailrootComponent implements OnInit {
   
-
   fileName;
   contentContainer;
 
@@ -34,7 +33,6 @@ export class DetailrootComponent implements OnInit {
   }
 
   RenderMarkdown(data){
-    
     
     var title = document.getElementById('title');
     var description = document.getElementById('description');

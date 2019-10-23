@@ -22,8 +22,8 @@ export class ProjectShowcaseComponent implements OnInit {
     name:"Voxel Factory",
     type: "Godot engine plugin",
     desc: "Voxel factory is a plugin that I developped for Godot Engine. \
-    It makes voxel game design easier for anyone without any of \
-    the complex meshing algorithm. It features a in-engine voxel editor, \
+    It makes voxel games more accesible for anyone by abtracting \
+    the complex meshing algorithm that is often associated with procedural meshing. It also features an in-engine voxel editor, \
     a sprite to voxel converter, and a library that was coded in C# and GDscript.",
     img: "../../assets/logo2.png",
     gitUrl: "https://github.com/antopilo/VoxelFactory",
@@ -33,7 +33,7 @@ export class ProjectShowcaseComponent implements OnInit {
   project3= {
     name:"SpriteStacker",
     type: "Software",
-    desc: "Spritestacker is tool to make drawing sprite stack easier. Sprite stacking is a \
+    desc: "Spritestacker is tool help the developpers in the creation of sprite stacks. Sprite stacking is a \
     2D technique that creates a pseudo 3D effect. The effect is possible by using multiple layers that \
     that have a small vertical offset between each other. This tool has a live 3D preview, a layer system and supports \
     multiple palettes from lospec.com",
@@ -45,8 +45,8 @@ export class ProjectShowcaseComponent implements OnInit {
   project4= {
     name:"Procedural Voxel engine",
     type: "Game project",
-    desc: "I've always been intrigued by procedurally generated world and there infinite potential \
-      this is my attempt at making my own world. I am using Godot engine to handle the ECS but everything else is \
+    desc: "I've always been intrigued by procedurally generated world and their infinite potential. \
+      This is my attempt at making my own procedural world. I am using Godot engine to handle the ECS but everything else is \
       handled by me. This is a multi-threaded project that allows for a smooth gameplay while the engine handles \
       the world generation.",
     img: "../../assets/voxelengine.jpg",
