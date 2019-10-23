@@ -1,11 +1,15 @@
 $bg-color: #10192C;
 $hi-color: #4FEAFF;
 $name-color: #EDEDED;
-.big-wrapper{
-  
-}
-.absolute{
-    position: absolute;
+
+.bounce-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: $bg-color;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 #heading-wrapper{
     //background-color: $bg-color;
@@ -17,7 +21,31 @@ $name-color: #EDEDED;
     padding-bottom: 100px;
     height:100%;
     background: $bg-color;
-    height: 90vh;
+    height: 80vh;
+}
+
+a { color: white; text-decoration: none; }
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 .center-content {
@@ -27,12 +55,8 @@ $name-color: #EDEDED;
     justify-content: center;
 }
 
-.yea {
-    width: 100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
+
+
 #first{
     color: $hi-color;
     font-size: 18px;
@@ -64,4 +88,72 @@ $name-color: #EDEDED;
 
 svg{
     shape-rendering: crispEdges;
+}
+
+profile-pic{
+    float:right;
+}
+
+.col-md-center-custom{
+    flex: 0 0 auto;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.custom-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px) {
+    .col-md-center-custom{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #heading-wrapper{
+        height: 80vh;
+
+    }
+    h1, h2, h3, h4, h5, h6, p{
+        text-align: center; 
+        width:100%;
+    }
+    .info div{
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .col-md-center-custom{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #heading-wrapper{
+        height: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    h1, h2, h3, h4, h5, h6, p{
+        text-align: center; 
+        width:100%;
+    }
+    .info {
+        margin-bottom: 50px;
+        div{
+
+            width:100%;
+        }
+    }
+
+
 }

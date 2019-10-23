@@ -8,14 +8,9 @@ $link-color: #858A93;
     border-radius: 8px;
 }
 
-#scene{
-    position: relative;
-}
-
 .col-md-6-custom {
     flex: 0 0 50%;
     max-width: 50%;
-    //position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -25,23 +20,23 @@ $link-color: #858A93;
     color: $text-color;
     background-color: $bg-color;
     border-radius: 3px;
-    padding: 15px;
+    padding: 30px;
     text-align: right;
     position: relative;
     left: -$overlap;
 }
 
 #type{
-    
-    margin-right: $overlap;
+    padding-right: $overlap;
 }
 
-
+#title{
+    padding-right: $overlap;
+}
 
 .item-wrapper{
     margin-top: 50px;
     text-align: right;
-    height:100%;
 }
 
 p, h6{
@@ -52,8 +47,6 @@ p, h6{
 
 h6{
     font-size: 26px;
-    
-    margin-right: $overlap;
 }
 
 p{
@@ -89,7 +82,21 @@ i{
     font-size: 18px;
 }
 
-@media screen and (max-width: 900px) {
+.custom-row-no-marg{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.custom-row-fixed{
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+@media screen and (max-width: 1000px) {
     .left{
         display:none;
         max-width: 0%;
@@ -103,16 +110,52 @@ i{
     .info-card{
         position: absolute;
         left: 0px;
+        max-height: 250px;
+        height: 250px;
     }
     #type{
-        margin-right: 0;
+        padding-right: 0;
     }
-    h6{
-        margin-right: 0;
+    
+    #title{
+        padding-right: 0;
     }
 
     .card-container{
         height: 100px;
     }
+
+    .custom-row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .custom-row-fixed{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        height: 250px;
+    }
     
+    .custom-row-no-marg{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .link-container{
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .info-card{
+        height: 300px;
+        max-height: 300px;
+    }
+
+    .custom-row-fixed{
+        height: 300px;
+    }
 }

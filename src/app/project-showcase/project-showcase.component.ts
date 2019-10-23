@@ -11,8 +11,7 @@ export class ProjectShowcaseComponent implements OnInit {
       name: "Project Robin",
       type: "Video game",
       desc: "This is a game that I am currently developping using C# and Godot engine. \
-      It’s a combination of puzzles, platforming and rpg elements. Some games that inspired me to start \
-      working on this project were Celeste, FEZ and Zelda. This project is 100% made by me, including the art, \
+      It’s a combination of puzzles, platforming and rpg elements. This project is 100% made by me, including the art, \
       the programming, level design, UI design and sound.",
       img: "../../assets/img/robin1.gif",
       gitUrl: "",

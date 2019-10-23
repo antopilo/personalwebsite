@@ -98,3 +98,23 @@ code{
         justify-content: center;
     }
 }
+
+
+
+@media screen and (max-width: 600px) {
+    #nav-wrapper{
+       padding-left: 5%;
+       padding-right: 5%;
+    }    
+    #title {
+    font-size: 2em
+    }
+
+    .wrapper{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #markdown-container{
+       width: 100%;
+    }
+}

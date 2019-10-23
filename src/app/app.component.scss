@@ -8,11 +8,12 @@
 }
 
 
-body{
-    margin: 0;
-    padding: 0;
+router-outlet{
+
+    overflow-x: hidden;
 }
 h1 {
     font-family: "roboto-bold"
 }
+
 

@@ -1,18 +1,16 @@
 $bg-color: #10192C;
 $text-color: #8492B0;
 $overlap: 50px;
-
 $link-color: #858A93;
+
 .project-img{
     width: 100%;
     border-radius: 8px;
-    z-index: -2;
 }
 
 .col-md-6-custom {
     flex: 0 0 50%;
     max-width: 50%;
-    position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -22,9 +20,8 @@ $link-color: #858A93;
     color: $text-color;
     background-color: $bg-color;
     border-radius: 3px;
-    padding: 15px;
+    padding: 30px;
     text-align: left;
-    z-index: 2;
     position: relative;
     right: -$overlap;
 }
@@ -56,10 +53,8 @@ p{
 
 .link-container{
     float: left;
-    left:0;
-    position: relative;
     width: 100%;
-    margin-left: $overlap;
+    padding-left: $overlap;
     a{
         
         color: $link-color;
@@ -71,6 +66,7 @@ p{
     i{
         width: 25px;
         height: 25px;
+        margin-left: 10px;
     }
 }
 
@@ -81,8 +77,20 @@ i{
 .description{
     font-size: 18px;
 }
+.custom-row-no-marg{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
-@media screen and (max-width: 900px) {
+.custom-row-fixed{
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+@media screen and (max-width: 1000px) {
     .left{
         display:none;
         max-width: 0%;
@@ -100,13 +108,40 @@ i{
     #type{
         margin-left: 0;
     }
+
     .info-card{
         position: absolute;
         left: 0px;
+        width: 100%;
+        margin-right: 0;
+        height: 250px;
+        max-height: 250px;
     }
 
-    .card-container{
-        height: 100px;
+    .link-container{
+        padding-left: 0;
+    }
 
+    .custom-row-no-marg{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .custom-row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .info-card{
+        height: 300px;
+        max-height: 300px;
+    }
+
+    .custom-row-fixed{
+        height: 300px;
     }
 }

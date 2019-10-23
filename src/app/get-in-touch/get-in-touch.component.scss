@@ -8,6 +8,7 @@ $bg-color: #10192C;
     color: white;
     background: $bg-color;
     
+   
 }
 
 p{
@@ -20,8 +21,16 @@ p{
     width: 100%;
     display: flex;
     justify-content: center;
+
 }
 
+
+#cv-text{
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
 .btn-wrapper{
     width: 100%;
     display: flex;

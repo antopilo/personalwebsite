@@ -5,7 +5,12 @@ $bg-color: #10192C;
     background-color: $bg-color;
     
 }
-
+a{
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
 #sidebar-wrapper{
     padding-top: 25px;
     display: flex;

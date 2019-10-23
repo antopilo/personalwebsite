@@ -27,7 +27,7 @@ export class OtherProjectsComponent implements OnInit {
   project3 = {
     name: "Project Godview",
     desc: "This is an attempt at making a Topdown in-game level editor. It features a full fledge level editor, \
-    that can be toggled using the TAB key. The gameplay also has a lot of elemental interaction. For exemple, Fire that can \
+    that can be toggled using the TAB key. The gameplay also has a lot of elemental interaction. For example, Fire that can \
     ignite oil, and water that extenguish fire.",
     url: ""
   }

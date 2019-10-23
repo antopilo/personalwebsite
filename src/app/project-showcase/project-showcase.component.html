@@ -1,61 +1,62 @@
 <div class="project-wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12">
                 <h2>Some of my projects.</h2>
             </div>
            
         </div>
-        
-        <div class="row">
-            <div class="col">
-                <app-project-showcase-item 
-                    projectName='{{ project.name }}'
-                    projectDesc='{{ project.desc }}'
-                    projectImg='{{ project.img }}'
-                    projectType='{{ project.type }}'
-                    gitUrl='{{ project.gitUrl }}'
-                    externalLink='{{ project.externalLink}}'
-                ></app-project-showcase-item>
+        <div class="project-list">
+            <div class="row">
+                <div class="col">
+                    <app-project-showcase-item 
+                        projectName='{{ project.name }}'
+                        projectDesc='{{ project.desc }}'
+                        projectImg='{{ project.img }}'
+                        projectType='{{ project.type }}'
+                        gitUrl='{{ project.gitUrl }}'
+                        externalLink='{{ project.externalLink}}'
+                    ></app-project-showcase-item>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <app-project-showcase-item-reverse
-                    projectName='{{ project2.name }}'
-                    projectDesc='{{ project2.desc }}'
-                    projectImg='{{ project2.img }}'
-                    projectType='{{ project2.type }}'
-                    gitUrl='{{ project2.gitUrl }}'
-                    externalLink='{{ project2.externalLink}}'
-                    >
-                </app-project-showcase-item-reverse>
+            <div class="row ">
+                <div class="col">
+                    <app-project-showcase-item-reverse
+                        projectName='{{ project2.name }}'
+                        projectDesc='{{ project2.desc }}'
+                        projectImg='{{ project2.img }}'
+                        projectType='{{ project2.type }}'
+                        gitUrl='{{ project2.gitUrl }}'
+                        externalLink='{{ project2.externalLink}}'
+                        >
+                    </app-project-showcase-item-reverse>
+                </div>
             </div>
-        </div>
-        
-        <div class="row">
-            <div class="col">
-                <app-project-showcase-item 
-                    projectName='{{ project3.name }}'
-                    projectDesc='{{ project3.desc }}'
-                    projectImg='{{ project3.img }}'
-                    projectType='{{ project3.type }}'
-                    gitUrl='{{ project3.gitUrl }}'
-                    externalLink='{{ project3.externalLink}}'
-                ></app-project-showcase-item>
+            
+            <div class="row">
+                <div class="col">
+                    <app-project-showcase-item 
+                        projectName='{{ project3.name }}'
+                        projectDesc='{{ project3.desc }}'
+                        projectImg='{{ project3.img }}'
+                        projectType='{{ project3.type }}'
+                        gitUrl='{{ project3.gitUrl }}'
+                        externalLink='{{ project3.externalLink}}'
+                    ></app-project-showcase-item>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <app-project-showcase-item-reverse
-                    projectName='{{ project4.name }}'
-                    projectDesc='{{ project4.desc }}'
-                    projectImg='{{ project4.img }}'
-                    projectType='{{ project4.type }}'
-                    gitUrl='{{ project4.gitUrl }}'
-                    externalLink='{{ project4.externalLink}}'>
-        
-                </app-project-showcase-item-reverse>
+            <div class="row">
+                <div class="col">
+                    <app-project-showcase-item-reverse
+                        projectName='{{ project4.name }}'
+                        projectDesc='{{ project4.desc }}'
+                        projectImg='{{ project4.img }}'
+                        projectType='{{ project4.type }}'
+                        gitUrl='{{ project4.gitUrl }}'
+                        externalLink='{{ project4.externalLink}}'>
+            
+                    </app-project-showcase-item-reverse>
+                </div>
             </div>
         </div>
     </div>
